@@ -1,19 +1,34 @@
-# 99b1fb115cf5b0bb41207e99ae4ac1ae
+<h1 align="center"> 99b1fb115cf5b0bb41207e99ae4ac1ae :mag_right: </h1> 
 
-## Project setup
+
+## Features :star2:	
+
+- [x] Vuejs
+- [x] Vuex
+- [x] Axios
+- [x] Search
+- [x] Pagination
+- [ ] Test
+
+### Project deploy 🛫
+
+- <a href="https://99b1fb115cf5b0bb41207e99ae4ac1ae.netlify.app/"> Vercel </a>
+### Project setup 📦
 ```
 npm install
 ```
 
-### Compiles and hot-reloads for development
+### Compiles and hot-reloads for development 🛫
 ```
 npm run serve
 ```
 
-### Compiles and minifies for production
+### Compiles and minifies for production 💣
 ```
 npm run build
 ```
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
+
+
