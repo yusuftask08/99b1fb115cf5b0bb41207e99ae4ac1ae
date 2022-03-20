@@ -1,0 +1,199 @@
+*
+    box-sizing: border-box
+
+.home-container
+    font-family: Avenir, Helvetica, Arial, sans-serif
+    color: #2c3e50
+    margin-top: 5%
+    margin-right: 5%
+    margin-left: 5%
+
+.search-input-container
+    display: flex
+    justify-content: center
+    margin-bottom: 5%
+
+.search-input
+    width: 50%
+    height: 40px
+    border-radius: 5px
+    background: #fff
+    border: 1px solid #000
+    font-size: 18px
+    line-height: 21px
+    text-align: center
+
+textarea:focus, input:focus
+    outline: none
+
+.container
+    display: flex
+    -webkit-display: box
+    -moz-display: box
+    -ms-display: flexbox
+    -webkit-display: flex
+    flex-wrap: wrap
+    padding: 0
+    margin: 0
+
+.cards
+    display: grid
+    grid-template-columns: repeat(auto-fill, minmax(20%, 1fr))
+    grid-gap: 20px
+    align-items: stretch
+
+    & > .card
+        border-radius: 0.25rem
+        box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25)
+        width: 100%
+        height: auto
+        border-radius: 7px
+        text-align: center
+        cursor: pointer
+        position: relative
+        transition: all 0.5s ease-out
+        color: #fff
+        font-size: 20px
+
+    & > .card .card-img
+        padding: 20px
+        text-align: center
+        margin-top: 5px
+        margin-right: auto
+        margin-left: auto
+        height: 200px
+
+    & > .card img
+        max-width: 50%
+        max-height: 100%
+
+    & .card .card-text
+        padding: 2px
+        text-align: center
+        color: #000000a8
+    & .card .card-text h4
+        font-size: 1.2rem
+
+    & .card .card-info span
+        font-size: 1rem
+        text-decoration: none
+        font-weight: bold
+        color: #555
+
+    & .card .card-info
+        padding: 0 20px 0 20px
+        position: absolute
+        top: 95%
+        z-index: 9999
+        min-width: 100%
+        background: #fff
+
+    & .card .card-info span p
+        text-align: center
+
+    & .card .card-info span p em
+        font-style: normal
+        display: none
+
+    & .card .card-info span ul
+        margin-bottom: 20px
+
+    & .card .card-info span li
+        margin-right: 20px
+        text-align: left
+        padding: 2px
+        font-size: 1rem
+
+.pagination__container
+    margin: 5%
+    font-weight: bold
+    font-size: 14px
+    display: flex
+    justify-content: center
+    align-items: center
+
+.pagination-list-numbers
+    cursor: pointer
+    border: 1px solid #484848
+    text-align: center
+    margin-right: 4px
+    border-radius: 3px
+
+    & span
+        display: block
+        padding: 4px
+        width: 25px
+
+.pagination-list-item
+    display: inline-block
+    cursor: pointer
+    border: 1px solid #484848
+    text-align: center
+    padding: 4px 18px
+    margin-right: 4px
+
+.pagination-list
+    display: flex
+
+.select
+    background: #204080
+    color: #ffffff
+    display: block
+
+.pagination-list-item:hover,
+.pagination-list-numbers:hover
+    background: #20408046
+
+.pagination-list-item.next
+    width: 100px
+    border-radius: 3px
+
+.pagination-list-item.previous
+    width: 100px
+    border-radius: 3px
+
+.fade-enter-active,
+.fade-leave-active
+    transition-duration: 0.3s
+    transition-property: opacity
+    transition-timing-function: ease
+
+.fade-enter,
+.fade-leave-active
+    opacity: 0
+
+@media screen and (max-width: 768px)
+    .search-input
+        width: 100%
+        height: 30px
+
+    .home-container
+        margin: 10%
+
+    .cards
+        display: flex
+        flex-direction: column
+        margin: 0px,
+        padding: 0px
+
+    .pagination-list-numbers
+        display: none
+
+    .pagination-list button
+        margin-right: 10px
+        margin-top: 20px
+        margin-left: auto
+
+@media screen and (min-width: 768px) and (max-width: 1024px)
+    .home-container
+        margin: 10%
+
+    .cards
+        display: grid
+        grid-template-columns: repeat(auto-fill, minmax(35%, 1fr))
+        grid-gap: 20px
+        align-items: stretch
+
+    .search-input
+        width: 100%
+        height: 30px
