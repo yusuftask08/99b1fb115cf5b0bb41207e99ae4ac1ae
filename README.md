@@ -1,18 +1,9 @@
-<h1 align="center"> 99b1fb115cf5b0bb41207e99ae4ac1ae :mag_right: </h1> 
-
-
-## Features :star2:	
-
-- [x] Vuejs
-- [x] Vuex
-- [x] Axios
-- [x] Search
-- [x] Pagination
-- [ ] Test
+<h1 align="center"> 99b1fb115cf5b0bb41207e99ae4ac1ae  </h1> 
 
 ### Project deploy 🛫
 
 - <a href="https://99b1fb115cf5b0bb41207e99ae4ac1ae.netlify.app/"> Vercel </a>
+
 ### Project setup 📦
 ```
 npm install
